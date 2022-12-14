@@ -1,0 +1,27 @@
+{
+    'name': 'ITI Management Test',
+    'version': '1.0.0',
+    'category': 'ITI',
+    'author': 'Shimaa Attallah',
+    'summary': 'ITI management system',
+    'description': """ITI management system""",
+    'depends': ['base', 'hr'],
+    'data': [
+        'security/iti_security.xml',
+        'security/ir.model.access.csv',
+        'report/iti_student_templates.xml',
+        'report/iti_reports.xml',
+        'views/iti_student_view.xml',
+        'views/iti_track_view.xml',
+        'views/iti_course_view.xml',
+        'views/hr_employee.xml',
+    ],
+    'demo': [],
+    'application': True,
+    'auto_install': False,
+    'installable': True,
+    'assets': {},
+    'license': 'LGPL-3',
+    'sequence': -100,
+
+}

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="iti_student_templates">
+            <t t-call="web.html_container">
+                <t t-foreach="docs" t-as="o">
+                    <t t-call="web.external_layout">
+                        <div class="page">
+                            <h1 class="text-danger text-center mb-4">Student Status Report
+                            <span t-field="o.image" t-options='{"widget": "image"}'/></h1>
+
+                            <div class="row">
+                                <div class="col-7">
+                                    <h3>
+                                        <span class="font-weight-bold">Name:</span>
+                                        <span t-field="o.first_name"/>
+                                        <span t-field="o.second_name"/>
+                                    </h3>
+                                    <h3>
+                                        <span class="font-weight-bold">Age:</span>
+                                        <span t-field="o.age"/>
+                                    </h3>
+                                    <h3>
+                                        <span class="font-weight-bold">Birth Date:</span>
+                                        <span t-field="o.birth_date"/>
+                                    </h3>
+                                    <h3>
+                                        <span class="font-weight-bold">Gender:</span>
+                                        <span t-field="o.gender"/>
+                                    </h3>
+                                    <h3>
+                                        <span class="font-weight-bold">Email:</span>
+                                        <span t-field="o.email"/>
+                                    </h3>
+                                </div>
+                                <div class="col-5">
+                                    <h3>
+                                        <span class="font-weight-bold">Track_ID:</span>
+                                        <span t-field="o.track_id"/>
+                                    </h3>
+                                    <h3>
+                                        <span class="font-weight-bold">Track:</span>
+                                        <span t-field="o.track_name"/>
+                                    </h3>
+                                    <h3>
+                                        <span class="font-weight-bold">State:</span>
+                                        <span t-field="o.state"/>
+                                    </h3>
+
+                                </div>
+                            </div>
+                        </div>
+                    </t>
+                </t>
+            </t>
+        </template>
+    </data>
+</odoo>
+
+
+
+
